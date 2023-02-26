@@ -12,7 +12,7 @@ require("dotenv").config();
 conexionDB();
 
 // settings
-app.set("name", "rest-api-nodejs");
+app.set("name", "rest-api-for teachers and students to insert grade, comment and courses");
 app.set("port", process.env.port || 3000);
 
 
