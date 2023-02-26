@@ -1,0 +1,19 @@
+POST http://localhost:3000/api/profesores/registrar
+Content-Type: application/json
+
+
+{
+    "correo": " jose2.mora@profesor.com",
+    "clave": "123"
+}
+
+###  login esto te genera un token 
+
+POST http://localhost:3000/api/profesores/login
+Content-Type: application/json
+
+
+{
+    "correo": " jose2.mora@profesor.com",
+    "clave": "123"
+}

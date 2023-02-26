@@ -1,0 +1,68 @@
+GET http://localhost:3000/api/estudiantes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y1MTQ5Yzc0OGEwNmFlYWVhMzY2MmEiLCJjb3JyZW8iOiIgam9zZTIubW9yYUBwcm9mZXNvci5jb20iLCJpYXQiOjE2NzczNzk5MjgsImV4cCI6MTY3NzM4NzEyOH0.6lbGAtuvftVzuwC3PzBUu7iSiosFRaE4XXXfxU5-sjI
+
+###
+POST http://localhost:3000/api/estudiantes
+Content-Type: application/json
+
+{
+    "nombre": "jimena mora",
+    "correo": "jimena@correo.de",
+    "materias": {
+            "nombre": "Matematicas",
+            "nota": "100",
+            "comentario": "Es muy brillante"
+        }
+    
+}
+###
+PUT http://localhost:3000/api/estudiantes/63f3f78f521892cb2cd85eca
+Content-Type: application/json
+
+{
+    "nombre": "jimena mora222",
+    "correo": "jimena222@correo.de"
+}
+
+###
+
+DELETE http://localhost:3000/api/estudiantes/63f3e6482fc595c6e935662b
+
+
+
+
+
+// ------------------------------------------MATERIAS---------------
+###
+
+GET http://localhost:3000/api/materias/63f40350e49587c0018e7e9b
+
+
+
+###
+
+POST http://localhost:3000/api/materias/63f40350e49587c0018e7e9b
+Content-Type: application/json
+
+
+{
+    "nombre": "frances",
+    "nota": "100",
+    "comentario": "Habla como un nativo"
+}
+
+###
+
+DELETE http://localhost:3000/api/materias/63f40350e49587c0018e7e9b/63f43cccd7c639329b19f8b3
+
+
+###
+
+PUT http://localhost:3000/api/materias/63f40350e49587c0018e7e9b/63f45e02e5f91830462a0bee
+Content-Type: application/json
+
+{
+    
+    "nota": "90",
+    "comentario": "debe un trabajo todavia"
+}
